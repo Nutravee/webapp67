@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-image: url('img/bg.png');
+        }
+    </style>
+    <link rel="stylesheet" href="signin.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิกผู้ใช้งาน</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>สมัครสมาชิกผู้ใช้งาน</h1>
+        
+        <form>
+            <h2>1. ข้อมูลส่วนตัว</h2>
+            <div class="form-group">
+                <label for="username">ชื่อผู้ใช้:</label>
+                <input type="text" id="username" name="username" value="ชื่อผู้ใช้">
+            </div>
+            <div class="form-group">
+                <label for="lastname">ชื่อ-นามสกุล:</label>
+                <input type="text" id="lastname" name="lastname" value="ชื่อ-นามสกุล">
+            </div>
+            <div class="form-group">
+                <label for="phone">เบอร์โทร:</label>
+                <input type="text" id="phone" name="phone" value="เบอร์โทร">
+            </div>
+            <div class="form-group">
+                <label for="email">อีเมล์:</label>
+                <input type="email" id="email" name="email" value="อีเมล์">
+            </div>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" value="รหัสผ่าน">
+            </div>
+            <h2>2. ที่อยู่ปัจจุบัน</h2>
+            <div class="form-group">
+                <label for="house-number">บ้านเลขที่:</label>
+                <input type="text" id="house-number" name="house-number" value="บ้านเลขที่">
+            </div>
+            <div class="form-group">
+                <label for="province">จังหวัด:</label>
+                <select id="province" name="province">
+                    <option value="" disabled selected>เลือกจังหวัด</option>
+                    <option value="1">ปทุมธานี</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="district">อำเภอ:</label>
+                <select id="district" name="district">
+                    <option value="" disabled selected>เลือกอำเภอ</option>
+                    <option value="1">ธัญบุรี</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sub-district">ตำบล:</label>
+                <select id="sub-district" name="sub-district">
+                    <option value="" disabled selected>เลือกตำบล</option>
+                    <option value="1">รังสิต</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="postal-code">รหัสไปรษณีย์:</label>
+                <input type="text" id="postal-code" name="postal-code" value="รหัสไปรษณีย์">
+            </div>
+            <div class="form-group">
+                <label for="address">รายละเอียดที่อยู่:</label>
+                <input type="text" id="address" name="address" value="หมู่, ซอย, ถนน">
+            </div>
+            <div class="form-group">
+                <label for="profile-picture">อัพโหลดรูปโปรไฟล์:</label>
+                <input type="file" id="profile-picture" name="profile-picture">
+                <label for="profile-picture" class="upload-btn">เลือกไฟล์</label>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">สมัครสมาชิก</button>
+                <button type="button" class="cancel-btn">ยกเลิก</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
